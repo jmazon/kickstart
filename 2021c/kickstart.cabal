@@ -1,0 +1,33 @@
+name:                kickstart
+version:             2021.3.0.0
+synopsis:            Kickstart 2021 Round C
+license:             AllRightsReserved
+author:              Jean-Baptiste Mazon
+maintainer:          author
+category:            Competition
+build-type:          Simple
+cabal-version:       >=1.10
+
+executable A-smaller-strings
+  main-is:             A-smaller-strings.hs
+  build-depends:       base
+  default-language:    Haskell2010
+  ghc-options: -Wall
+
+executable B-alien-generator
+  main-is:             B-alien-generator.hs
+  build-depends:       base
+  default-language:    Haskell2010
+  ghc-options: -Wall
+
+executable C-rock-paper-scissors
+  main-is:             C-rock-paper-scissors.hs
+  build-depends:       base,array,random
+  default-language:    Haskell2010
+  ghc-options: -Wall
+
+executable D-binary-operator
+  main-is:             D-binary-operator.hs
+  build-depends:       base,parsec,containers,deepseq,mtl,random
+  default-language:    Haskell2010
+  ghc-options: -Wall
