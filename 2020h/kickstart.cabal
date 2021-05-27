@@ -1,0 +1,36 @@
+name:                kickstart
+version:             2020.8.0.0
+synopsis:            Kickstart 2020 H
+license:             AllRightsReserved
+author:              Jean-Baptiste Mazon
+maintainer:          author
+category:            Competition
+build-type:          Simple
+cabal-version:       >=1.10
+
+executable A-retype
+  main-is:             A-retype.hs
+  build-depends:       base
+  default-language:    Haskell2010
+  ghc-options: -Wall
+
+executable B-boring-numbers
+  main-is:             B-boring-numbers.hs
+  build-depends:       base
+  default-language:    Haskell2010
+  ghc-options: -Wall
+
+executable C-rugby
+  main-is:             C-rugby.hs
+  build-depends:       array >= 0.5.4.0,
+                       base,
+                       containers >= 0.6.2.1,
+                       mtl >= 2.2.2
+  default-language:    Haskell2010
+  ghc-options: -Wall
+
+executable D-friends
+  main-is:             D-friends.hs
+  build-depends:       base, array
+  default-language:    Haskell2010
+  ghc-options: -Wall
