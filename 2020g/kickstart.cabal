@@ -1,0 +1,33 @@
+name:                kickstart
+version:             2020.7.0.0
+synopsis:            Kickstart 2020 G
+license:             AllRightsReserved
+author:              Jean-Baptiste Mazon
+maintainer:          author
+category:            Competition
+build-type:          Simple
+cabal-version:       >=1.10
+
+executable A-kick_start
+  main-is:             A-kick_start.hs
+  build-depends:       base
+  default-language:    Haskell2010
+  ghc-options: -Wall
+
+executable B-maximum-coins
+  main-is:             B-maximum-coins.hs
+  build-depends:       base, bytestring
+  default-language:    Haskell2010
+  ghc-options: -Wall
+
+executable C-combination-lock
+  main-is:             C-combination-lock.hs
+  build-depends:       base, vector
+  default-language:    Haskell2010
+  ghc-options: -Wall
+
+executable D-merge-cards
+  main-is:             D-merge-cards.hs
+  build-depends:       base, vector
+  default-language:    Haskell2010
+  ghc-options: -Wall
