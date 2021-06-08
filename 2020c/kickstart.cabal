@@ -1,0 +1,33 @@
+name:                kickstart
+version:             2020.3.0.0
+synopsis:            Kickstart 2020 C
+license:             AllRightsReserved
+author:              Jean-Baptiste Mazon
+maintainer:          author
+category:            Competition
+build-type:          Simple
+cabal-version:       >=1.10
+
+executable A-countdown
+  main-is:             A-countdown.hs
+  build-depends:       base
+  default-language:    Haskell2010
+  ghc-options: -Wall
+
+executable B-stable-wall
+  main-is:             B-stable-wall.hs
+  build-depends:       base,array,containers
+  default-language:    Haskell2010
+  ghc-options: -Wall
+
+executable C-perfect-subarray
+  main-is:             C-perfect-subarray.hs
+  build-depends:       base,bytestring,vector
+  default-language:    Haskell2010
+  ghc-options: -Wall
+
+executable D-candies
+  main-is:             D-candies.hs
+  build-depends:       base,vector
+  default-language:    Haskell2010
+  ghc-options: -Wall
