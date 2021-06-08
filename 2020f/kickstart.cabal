@@ -1,0 +1,33 @@
+name:                kickstart
+version:             2020.6.0.0
+synopsis:            Kickstart 2020 F
+license:             AllRightsReserved
+author:              Jean-Baptiste Mazon
+maintainer:          author
+category:            Competition
+build-type:          Simple
+cabal-version:       >=1.10
+
+executable A-atm-queue
+  main-is:             A-atm-queue.hs
+  build-depends:       base
+  default-language:    Haskell2010
+  ghc-options: -Wall
+
+executable B-metal-harvest
+  main-is:             B-metal-harvest.hs
+  build-depends:       base
+  default-language:    Haskell2010
+  ghc-options: -Wall
+
+executable C-painters-duel
+  main-is:             C-painters-duel.hs
+  build-depends:       base, containers
+  default-language:    Haskell2010
+  ghc-options: -Wall
+
+executable D-yeetzhee
+  main-is:             D-yeetzhee.hs
+  build-depends:       base, containers, vector
+  default-language:    Haskell2010
+  ghc-options: -Wall
