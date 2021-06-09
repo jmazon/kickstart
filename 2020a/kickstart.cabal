@@ -1,0 +1,33 @@
+name:                kickstart
+version:             2020.1.0.0
+synopsis:            Kickstart 2020 A
+license:             AllRightsReserved
+author:              Jean-Baptiste Mazon
+maintainer:          author
+category:            Competition
+build-type:          Simple
+cabal-version:       >=1.10
+
+executable A-allocation
+  main-is:             A-allocation.hs
+  build-depends:       base
+  default-language:    Haskell2010
+  ghc-options: -Wall
+
+executable B-plates
+  main-is:             B-plates.hs
+  build-depends:       base, vector
+  default-language:    Haskell2010
+  ghc-options: -Wall
+
+executable C-workout
+  main-is:             C-workout.hs
+  build-depends:       base
+  default-language:    Haskell2010
+  ghc-options: -Wall
+
+executable D-bundling
+  main-is:             D-bundling.hs
+  build-depends:       base, containers
+  default-language:    Haskell2010
+  ghc-options: -Wall
